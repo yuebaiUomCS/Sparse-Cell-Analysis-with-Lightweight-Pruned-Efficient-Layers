@@ -208,7 +208,6 @@ This implementation builds upon and extends the following works:
 - **Structured neural network pruning** for model compression
 - **Two-stage training pipeline** with deterministic pretraining
 - **Progressive pruning** with performance monitoring
-- **Robust cross-validation** and evaluation metrics
 
 ## Contributing
 
