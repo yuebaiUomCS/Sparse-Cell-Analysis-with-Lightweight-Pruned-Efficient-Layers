@@ -240,4 +240,4 @@ This project is for research purposes. Please cite appropriately if used in publ
 
 ## Contact
 
-For questions regarding this implementation, please create an issue in this repository.
+For questions regarding this implementation, please email me Yue Bai <yue.bai-6@postgrad.manchester.ac.uk>.
