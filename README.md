@@ -24,16 +24,12 @@ The approach enables robust cell type annotation with calibrated uncertainty est
 - **Two-Stage Training Pipeline**: 
   - Stage A: Deterministic pretraining
   - Stage B: Bayesian fine-tuning with optional pruning
-- **Cross-validation Support**: Built-in k-fold cross-validation
-- **Distributed Training**: Multi-GPU support via PyTorch DDP
 
 ## Model Architecture
 
 The model uses a Performer-based transformer with:
 - Bayesian linear layers for uncertainty quantification
 - Structured pruning capabilities in fully connected layers
-- Positional embeddings for gene sequence information
-- Focal loss for handling class imbalance
 
 ## Data Preparation
 
@@ -146,9 +142,8 @@ python predict_updated.py \
 │   └── stageb_round2.sh           # Secondary pruning only
 │
 └── Configuration
-    ├── requirements.txt           # Dependencies
     ├── README.md                  # This file
-    └── LICENSE                    # GPL v3 License
+    └── LICENSE                   
 ```
 
 ## Expected Output
@@ -158,19 +153,6 @@ python predict_updated.py \
 - **Model Checkpoints**: Saved models at each training stage
 - **Pruning Statistics**: Sparsity levels and performance metrics
 - **Cross-validation Results**: Performance across different data splits
-
-## Performance
-
-- **Training Time**: ~4-6 hours for complete pipeline on GPU
-- **Memory Usage**: ~8-12GB GPU memory for typical datasets  
-- **Model Size**: 50-70% reduction after structured pruning
-- **Accuracy**: Maintains >95% of dense model performance
-
-## Time Cost
-- Installation time: ~30 minutes
-- Stage A training: ~2-3 hours  
-- Stage B training: ~2-3 hours
-- Inference (10K cells): ~5-10 minutes
 
 ## Requirements
 
