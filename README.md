@@ -17,12 +17,6 @@ The approach enables robust cell type annotation with calibrated uncertainty est
 
 [![scipy-1.5.4](https://img.shields.io/badge/scipy-1.5.4-yellowgreen)](https://github.com/scipy/scipy) [![torch-1.8.1](https://img.shields.io/badge/torch-1.8.1-orange)](https://github.com/pytorch/pytorch) [![numpy-1.19.2](https://img.shields.io/badge/numpy-1.19.2-red)](https://github.com/numpy/numpy) [![pandas-1.1.5](https://img.shields.io/badge/pandas-1.1.5-lightgrey)](https://github.com/pandas-dev/pandas) [![scanpy-1.7.2](https://img.shields.io/badge/scanpy-1.7.2-blue)](https://github.com/theislab/scanpy)
 
-Install the required dependencies:
-
-```bash
-pip install -r requirements.txt
-```
-
 ## Key Features
 
 - **Bayesian Uncertainty Quantification**: Monte Carlo sampling for prediction uncertainty
